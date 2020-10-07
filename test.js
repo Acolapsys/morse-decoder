@@ -1,7 +1,13 @@
 const { expect } = require('chai');
 const { decode } = require('./src/index.js');
 
+
+
+
+
 describe("Easy", function() {
+
+
     it("Sentence test 1", function() {
         const expr = "00101010100000000010001011101000101110100000111111**********00001011110000111111000010111000101110100000111010";
         const result = "hello world";
@@ -306,4 +312,4 @@ describe("Hard (what's going on)", function() {
         const result = "ed3ca775829b4b8c0e59620017bf2596b27d0c5cd3de8eac0a145c4f25b31a63e2ebf340c4335a826c443ecea6069f50a836fdc35cc6c2a94cdf5da0fb3b6acb";
         expect(decode(expr)).to.equal(result);
     });
-})
+ })
